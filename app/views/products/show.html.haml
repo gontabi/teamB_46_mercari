@@ -16,6 +16,9 @@
   / 画像とテーブル
   %section.image-and-table
     = image_tag url_to_image(@product.image), class: "pstop-image"
+    - if @product.sold == Product.statuses[:available]
+    - else
+      = image_tag("sold.png", class: "sold")
     %table.pstable
       %tr
         %td.pstd.pstdl
@@ -70,7 +73,6 @@
       - else
         %button.price-and-button__submit__sold{:type => "submit"}/
         %p SOLD OUT
-        = image_tag("sold", class: "sold")
 
   / ユーザーが入力する商品説明
   %section.comment

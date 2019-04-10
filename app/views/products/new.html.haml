@@ -56,7 +56,7 @@
           %p
             発送元の地域
             %span.bgred 必須
-            = f.collection_select :shipping, Prefecture.all, :id, :name
+            = f.collection_select :shipping, Prefecture.all, :name, :name
         .wrapper__main__list_select_bottom
           %p
             発送までの日数
