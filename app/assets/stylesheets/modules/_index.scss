@@ -18,7 +18,16 @@
     float:left;
     margin-top: 20px;
     margin-left: 20px;
-    img{
+    .product-image-folder{
+      width:213px;
+      height: 213px;
+      overflow: hidden;
+    }
+    .product-image{
+      width:100%;
+      height:100%;
+    }
+    .main-sold{
       width:213px;
       height: auto;
     }

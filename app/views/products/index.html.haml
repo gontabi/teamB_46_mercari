@@ -23,7 +23,8 @@
         -@products.each do |product|
           .products__product
             =link_to user_product_path(product.user, product), target: "_blank" do
-              = image_tag product.image, class: "product-image"
+              .product-image-folder
+                = image_tag product.image, class: "product-image"
               - if product.sold == Product.statuses[:soldout]
                 = image_tag("sold", class: "main-sold")
               - else
