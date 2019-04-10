@@ -1,5 +1,5 @@
 crumb :root do
-  link "メルカリ", root_path
+  link "メルカリ", products_path
 end
 
 # Issue list
