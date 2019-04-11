@@ -133,7 +133,7 @@
             =link_to user_product_path(product.user, product), target: "_blank" do
               = image_tag product.image, class: "product-search-image"
               - if product.sold == 1
-                = image_tag("sold", class: "mai-search-sold")
+                = image_tag("soldout.png", class: "mai-search-sold")
               - else
               /商品の画像
               .products-search__product-bottom

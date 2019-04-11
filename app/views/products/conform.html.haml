@@ -70,7 +70,7 @@
             %br/
             =@user.nickname
           %p.buy-user-info-text
-            =link_to "変更する","#", class: "buy-user-info-fix"
+            %a 変更する
       %section.buy-content.buy-user-info{"data-buy" => "pay-method"}
         .buy-content-inner
           %h3 支払い方法
@@ -80,7 +80,7 @@
             01 / 01
           %figure
             =image_tag "//www-mercari-jp.akamaized.net/assets/img/card/american_express.svg?1355968437"
-            =link_to "変更する","#", class: "buy-user-info-fix"
+            %a 変更する
   / --------------------- フッター--------------------
   .wrapper
     %footer.single-footer

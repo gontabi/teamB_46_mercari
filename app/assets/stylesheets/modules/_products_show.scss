@@ -147,6 +147,10 @@ a{
     width: 700px;
     margin-right: auto;
     margin-left: auto;
+    .product-image{
+    height: 213px;
+    width: 213px;
+  }
   }
   .product{
     width: 213px;
@@ -157,10 +161,7 @@ a{
   .product:last-child{
     margin-right: 0;
   }
-  .product-image{
-    height: 100%;
-    width: 100%;
-  }
+
 .secure{
   text-align: center;
   height:60px;

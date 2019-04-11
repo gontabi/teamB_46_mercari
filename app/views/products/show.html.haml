@@ -18,7 +18,7 @@
     = image_tag url_to_image(@product.image), class: "pstop-image"
     - if @product.sold == Product.statuses[:available]
     - else
-      = image_tag("sold.png", class: "sold")
+      = image_tag("soldout.png", class: "sold")
     %table.pstable
       %tr
         %td.pstd.pstdl
@@ -117,7 +117,7 @@
           =link_to user_product_path(product.user, product), target: "_blank" do
             = image_tag url_to_image(product.image), :class => "product-image"
             - if product.sold == Product.statuses[:soldout]
-              = image_tag("sold", class: "main-sold")
+              = image_tag("soldout.png", class: "main-sold")
             - else
             /商品の画像
             .products__product-bottom
