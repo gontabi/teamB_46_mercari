@@ -95,7 +95,7 @@
       %a に同意したことになります。
       %button.wrapper__main__bottom__red
         =f.submit "出品する"
-      %button.wrapper__main__bottom__grey もどる
+      = link_to "もどる",root_path, class: 'wrapper__main__bottom__grey'
   .wrapper__bottom
     %a{:herf => "#"} プライバシーポリシー
     %a{:herf => "#"} メルカリ利用規約
