@@ -10,5 +10,6 @@ FactoryBot.define do
     price {1}
     image{"https://p1-e6eeae93.imageflux.jp/c!/a=2,w=460,h=460/0658/b30d5608ec542ba9ff82.jpeg"}
     shipping{"京都"}
+    category {0}
   end
 end

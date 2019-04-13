@@ -1,7 +1,5 @@
-
-
-/ 一番上のスクロール画像
-/ 一番上のスクロール画像
+= render :partial => "products/header"
+= breadcrumbs pretext: "", separator: " &rsaquo; "
 %section.top
   .slider
     = image_tag '1cde8aaebb0c3936a55e3713d2877b8b.jpg', :class => "top__image"
@@ -50,6 +48,9 @@
         = image_tag 'bottom-image.jpg', class: "bottom-image"
       %a.sel-button
         =link_to "出品", new_product_path, class: "sel-button-text"
+      - if user_signed_in?
         =link_to "" ,new_product_path, class: "fa fa-camera"
-
+      - else
+        =link_to "", new_user_session_path, class: "fa fa-camera"
+= render :partial => "products/footer"
 

@@ -15,7 +15,10 @@
       .header-inner__bottom__right
         %a
           %span.fa.fa-user-circle>
-          =link_to 'マイページ', users_path
+            - if user_signed_in?
+              =link_to 'マイページ', users_path
+            - else
+              =link_to 'マイページ', new_user_session_path
         %a
           %span.fa.fa-bell>
           お知らせ
